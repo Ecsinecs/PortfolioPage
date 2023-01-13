@@ -1,0 +1,20 @@
+@import "./header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: futuraText;
+    list-style-type: none;
+  }
+
+  @font-face {
+    font-family: futuraTitle;
+    src: url(../fonts/futura-pt-cond-bold-oblique.otf);
+  }
+
+  @font-face {
+    font-family: futuraText;
+    src: url(../fonts/futura-pt-medium-oblique.otf);
+  }

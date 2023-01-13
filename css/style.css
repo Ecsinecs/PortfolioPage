@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem 0.5rem 5rem;
+}
+.header .lang {
+  display: flex;
+  align-items: center;
+}
+.header .lang .esp {
+  width: 50px;
+  height: 30px;
+  margin-right: 0.6rem;
+}
+.header .lang .arrow {
+  font-size: 1.5rem;
+  font-family: futuraTitle;
+  font-weight: bolder;
+  rotate: 90deg;
+}
+.header .navbar {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: futuraText;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: futuraTitle;
+  src: url(../fonts/futura-pt-cond-bold-oblique.otf);
+}
+@font-face {
+  font-family: futuraText;
+  src: url(../fonts/futura-pt-medium-oblique.otf);
+}
+
+/*# sourceMappingURL=style.css.map */
