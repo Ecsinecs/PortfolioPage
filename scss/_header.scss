@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5rem 0.5rem 5rem;
+    padding: 1rem 5rem 1rem 5rem;
+    background-color: rgba(62, 45, 0, 0.121);
+    border-bottom: 1px solid rgba(62, 45, 0, 0.121);
+    backdrop-filter: blur(3px);
 
     .lang {
         display: flex;
@@ -24,5 +27,7 @@
 
     .navbar {
         display: flex;
+        gap: 60px;
+        font-size: 1.4rem;
     }
 }

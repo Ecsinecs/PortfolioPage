@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: futuraText;
     list-style-type: none;
+    color: rgb(220, 188, 107);
   }
 
   @font-face {
@@ -17,4 +18,16 @@
   @font-face {
     font-family: futuraText;
     src: url(../fonts/futura-pt-medium-oblique.otf);
+  }
+
+  body {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(74,69,53,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .backgroundDot {
+    background-image: url(../media/img/dot.png);
+    background-size: 4%;
+    height: 100vh;
   }

@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5rem 0.5rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  background-color: rgba(62, 45, 0, 0.121);
+  border-bottom: 1px solid rgba(62, 45, 0, 0.121);
+  backdrop-filter: blur(3px);
 }
 .header .lang {
   display: flex;
@@ -21,6 +24,8 @@
 }
 .header .navbar {
   display: flex;
+  gap: 60px;
+  font-size: 1.4rem;
 }
 
 * {
@@ -30,6 +35,7 @@
   text-decoration: none;
   font-family: futuraText;
   list-style-type: none;
+  color: rgb(220, 188, 107);
 }
 
 @font-face {
@@ -39,6 +45,17 @@
 @font-face {
   font-family: futuraText;
   src: url(../fonts/futura-pt-medium-oblique.otf);
+}
+body {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 21%, rgb(74, 69, 53) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.backgroundDot {
+  background-image: url(../media/img/dot.png);
+  background-size: 4%;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
