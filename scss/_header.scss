@@ -5,7 +5,10 @@
     padding: 1rem 5rem 1rem 5rem;
     background-color: rgba(62, 45, 0, 0.121);
     border-bottom: 1px solid rgba(62, 45, 0, 0.121);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1.3px);
+    position: fixed;
+    top: 0;
+    width: 100vw;
 
     .lang {
         display: flex;
