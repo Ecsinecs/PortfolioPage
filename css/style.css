@@ -33,9 +33,10 @@
 
 .home {
   padding-top: 12rem;
+  margin: 0 10rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
 }
 .home .img {
   align-self: center;
@@ -56,6 +57,50 @@
 }
 .home .text .subtitle {
   font-size: 2.3rem;
+}
+
+.sections {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-rows: 2rem 1fr;
+  grid-template-areas: "titleC divider titleE" "conocimientos divider estudios";
+}
+.sections .titleC {
+  grid-area: titleC;
+  font-size: 4rem;
+}
+.sections .conocimientos {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "techs techs2" "techs none" "techs langs";
+}
+.sections .conocimientos .techs {
+  grid-area: techs;
+  font-size: 2rem;
+}
+.sections .conocimientos .techs2 {
+  grid-area: techs2;
+  font-size: 2rem;
+}
+.sections .conocimientos .langs {
+  grid-area: langs;
+  font-size: 2rem;
+}
+.sections .divider {
+  grid-area: divider;
+  transform: rotate(90deg);
+  width: 20px;
+  height: 2px;
+}
+.sections .titleE {
+  grid-area: titleE;
+  font-size: 4rem;
 }
 
 * {

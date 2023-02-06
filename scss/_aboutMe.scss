@@ -1,0 +1,57 @@
+.sections {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-template-rows: 2rem 1fr;
+    grid-template-areas: 
+    "titleC divider titleE"
+    "conocimientos divider estudios"
+    ;
+
+    .titleC {
+        grid-area: titleC;
+        font-size: 4rem;
+    }
+
+    .conocimientos {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "techs techs2"
+        "techs none"
+        "techs langs"
+        ;
+
+        .techs {
+            grid-area: techs;
+            font-size: 2rem;
+        }
+
+        .techs2 {
+            grid-area: techs2;
+            font-size: 2rem;
+        }
+
+        .langs {
+            grid-area: langs;
+            font-size: 2rem;
+        }
+    }
+
+    .divider {
+        grid-area: divider;
+        transform: rotate(90deg);
+        width: 20px;
+        height: 2px;
+    }
+    
+    .titleE {
+        grid-area: titleE;
+        font-size: 4rem;
+    }
+}
