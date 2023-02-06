@@ -1,57 +1,94 @@
 .sections {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-rows: 4rem 1fr;
+  grid-template-areas:
+    "titleC divider titleE"
+    "conocimientos divider estudios";
+
+  .titleC {
+    grid-area: titleC;
+    font-size: 4rem;
+  }
+
+  .conocimientos {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 1fr 1fr;
+    grid-template-areas:
+      "techs techs2"
+      "techs none"
+      "techs langs";
+
+    .techs {
+      grid-area: techs;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .techs2 {
+      grid-area: techs2;
+      font-size: 2rem;
+    }
+
+    .langs {
+      grid-area: langs;
+      font-size: 2rem;
+    }
+  }
+
+  .divider {
+    grid-area: divider;
+    transform: rotate(90deg);
+    width: 610px;
+    height: 2px;
+  }
+
+  .titleE {
+    grid-area: titleE;
+    font-size: 4rem;
+  }
+
+  .estudios {
     display: grid;
     align-items: center;
-    justify-items: center;
-    gap: 30px;
-    grid-template-columns: 1fr 2px 1fr;
-    grid-template-rows: 2rem 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "titleC divider titleE"
-    "conocimientos divider estudios"
+    "secundario"
+    "terciario"
+    "personal"
     ;
 
-    .titleC {
-        grid-area: titleC;
-        font-size: 4rem;
+    .secundario {
+        grid-area: secundario;
+        font-size: 2.2rem;
     }
 
-    .conocimientos {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "techs techs2"
-        "techs none"
-        "techs langs"
-        ;
-
-        .techs {
-            grid-area: techs;
-            font-size: 2rem;
-        }
-
-        .techs2 {
-            grid-area: techs2;
-            font-size: 2rem;
-        }
-
-        .langs {
-            grid-area: langs;
-            font-size: 2rem;
-        }
+    .terciario {
+        grid-area: terciario;
+        font-size: 1.5rem;
     }
 
-    .divider {
-        grid-area: divider;
-        transform: rotate(90deg);
-        width: 20px;
-        height: 2px;
+    .personal {
+        grid-area: personal;
+        font-size: 1.5rem;
     }
-    
-    .titleE {
-        grid-area: titleE;
-        font-size: 4rem;
-    }
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.langIcon {
+  width: 48px;
+  height: 32px;
 }
