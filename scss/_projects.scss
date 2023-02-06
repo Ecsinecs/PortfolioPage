@@ -20,6 +20,11 @@
     box-shadow: 1px 1px 10px rgba(199, 153, 28, 0.347);
     width: fit-content;
     height: fit-content;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      box-shadow: 1px 1px 25px rgba(242, 197, 73, 0.849);
+    }
 
     a {
       height: 256px;
@@ -39,6 +44,14 @@
       .repoImg {
         width: 64px;
         height: 64px;
+        transition: all ease-in-out 0.3s;
+        border-radius: 40px;
+
+        &:hover {
+          box-shadow: 1px 1px 20px white;
+          width: 74px;
+          height: 74px;
+        }
       }
     }
 
