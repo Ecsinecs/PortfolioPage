@@ -4,87 +4,248 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Porfolio</title>
   </head>
   <body>
     <div class="backgroundDot">
-    <header class="header">
-      <div class="lang">
-        <img src="./media/img/icons/BanderaEspanola.svg" alt="esp" class="esp"/>
-        <span class="arrow">></span>
-      </div>
-      <ul class="navbar">
-        <li>Home</li>
-        <li>Sobre mi</li>
-        <li>Proyectos</li>
-      </ul>
-    </header>
-    <main class="container">
-      <!-- Home -->
-      <div class="home">
-        <div class="img">
-          <img src="./media/img/io.png" alt="mi fotito" />
+      <header class="header">
+        <div class="lang">
+          <img
+            src="./media/img/icons/BanderaEspanola.svg"
+            alt="esp"
+            class="esp"
+          />
         </div>
-        <div class="text">
-          <h1 class="title">¡Hola!</h1>
-          <div class="line"></div>
-          <p class="subtitle">
-            Mi nombre es Lucas Jähnel, soy un React Frontend developer de 19
-            años que tiene muchas ganas de entrar al mundo laboral para crecer
-            profesionalmente y para lograr mis metas economicas.
-          </p>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutMe">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contáctame</a></li>
+        </ul>
+      </header>
+      <main class="container">
+        <!-- Home -->
+        <div class="home" id="home">
+          <div class="img">
+            <img src="./media/img/io.png" alt="mi fotito" />
+          </div>
+          <div class="text">
+            <h1 class="title">¡Hola!</h1>
+            <div class="line"></div>
+            <p class="subtitle">
+              Mi nombre es Lucas Jähnel, soy un React Frontend developer de 19
+              años que tiene muchas ganas de entrar al mundo laboral para crecer
+              profesionalmente y lograr mis metas economicas.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Sobre mi -->
-      <div class="sectionLine"></div>
-      <div>
-        <!-- Conocimientos -->
-        <div class="sections">
+        <!-- Sobre mi -->
+        <div class="sectionLine"  id="aboutMe"></div>
+        <div>
+          <!-- Conocimientos -->
+          <div class="sections">
             <h2 class="titleC">Conocimientos</h2>
             <div class="conocimientos">
               <ul class="techs">
-                <li><img src="./media/img/icons/Html5.svg" alt="HTML5" class="icon"> HTML5</li>
-                <li><img src="./media/img/icons/css3.svg" alt="CSS3" class="icon"> CSS3</li>
-                <li><img src="./media/img/icons/Sass.svg" alt="SASS" class="icon"> SASS</li>
-                <li><img src="./media/img/icons/JS.svg" alt="JS" class="icon"> Javascript</li>
-                <li><img src="./media/img/icons/React.svg" alt="ReactJS" class="icon"> ReactJS</li>
-                <li><img src="./media/img/icons/git.svg" alt="Git" class="icon"> Git</li>
-                <li><img src="./media/img/icons/github.svg" alt="Github" class="icon"> Github</li>
-                <li><img src="./media/img/icons/npm.svg" alt="NPM" class="icon"> NPM</li>
+                <li>
+                  <img
+                    src="./media/img/icons/Html5.svg"
+                    alt="HTML5"
+                    class="icon"
+                  />
+                  HTML5
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/css3.svg"
+                    alt="CSS3"
+                    class="icon"
+                  />
+                  CSS3
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/Sass.svg"
+                    alt="SASS"
+                    class="icon"
+                  />
+                  SASS
+                </li>
+                <li>
+                  <img src="./media/img/icons/JS.svg" alt="JS" class="icon" />
+                  Javascript
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/React.svg"
+                    alt="ReactJS"
+                    class="icon"
+                  />
+                  ReactJS
+                </li>
+                <li>
+                  <img src="./media/img/icons/git.svg" alt="Git" class="icon" />
+                  Git
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/github.svg"
+                    alt="Github"
+                    class="icon"
+                  />
+                  Github
+                </li>
+                <li>
+                  <img src="./media/img/icons/npm.svg" alt="NPM" class="icon" />
+                  NPM
+                </li>
               </ul>
               <ul class="techs2">
-                <li><img src="./media/img/icons/word.svg" alt="Word" class="icon"> Microsoft Word</li>
-                <li><img src="./media/img/icons/excel.svg" alt="Excel" class="icon"> Microsoft Excel</li>
-                <li><img src="./media/img/icons/ps.svg" alt="PS" class="icon"> Adobe Photoshop</li>
+                <li>
+                  <img
+                    src="./media/img/icons/word.svg"
+                    alt="Word"
+                    class="icon"
+                  />
+                  Microsoft Word
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/excel.svg"
+                    alt="Excel"
+                    class="icon"
+                  />
+                  Microsoft Excel
+                </li>
+                <li>
+                  <img src="./media/img/icons/ps.svg" alt="PS" class="icon" />
+                  Adobe Photoshop
+                </li>
               </ul>
               <ul class="langs">
-                <li><img src="./media/img/icons/argentina.svg" alt="ES" class="langIcon"> Español (Nativo)</li>
-                <li><img src="./media/img/icons/BanderaEstadounidense.svg" alt="EN" class="langIcon"> Inglés (Intermedio)</li>
+                <li>
+                  <img
+                    src="./media/img/icons/argentina.svg"
+                    alt="ES"
+                    class="langIcon"
+                  />
+                  Español (Nativo)
+                </li>
+                <li>
+                  <img
+                    src="./media/img/icons/BanderaEstadounidense.svg"
+                    alt="EN"
+                    class="langIcon"
+                  />
+                  Inglés (Intermedio)
+                </li>
               </ul>
             </div>
             <div class="line divider"></div>
             <h2 class="titleE">Formación y habilidades</h2>
             <div class="estudios">
-                <p class="secundario"><img src="./media/img/icons/graduacion.svg" alt="graduation" class="icon">  Secundario completo en el Instituto Ceferino ㅤㅤㅤㅤㅤNamuncurá en Tres de Febrero.</p>
-                <ul class="terciario">
-                  <li style="font-size: 2rem;"><img src="./media/img/icons/webDev.svg" alt="web" class="icon"> Cursos terciarios en Coderhouse:</li>
-                  <li>ㅤㅤ- Desarrollo Web</li>
-                  <li>ㅤㅤ- Javascript</li>
-                  <li>ㅤㅤ- ReactJS</li>
-                </ul>
-                <ul class="personal">
-                  <li style="font-size: 2rem;"><img src="./media/img/icons/personal.svg" alt="personal" class="icon"> Habilidades personales:</li>
-                  <li>ㅤㅤ- Aprendizaje rápido</li>
-                  <li>ㅤㅤ- Adaptabilidad para realizar tareas</li>
-                </ul>
+              <p class="secundario">
+                <img
+                  src="./media/img/icons/graduacion.svg"
+                  alt="graduation"
+                  class="icon"
+                />
+                Secundario completo en el Instituto Ceferino ㅤㅤㅤㅤㅤNamuncurá
+                en Tres de Febrero.
+              </p>
+              <ul class="terciario">
+                <li style="font-size: 2rem">
+                  <img
+                    src="./media/img/icons/webDev.svg"
+                    alt="web"
+                    class="icon"
+                  />
+                  Cursos terciarios en Coderhouse:
+                </li>
+                <li>ㅤㅤ- Desarrollo Web</li>
+                <li>ㅤㅤ- Javascript</li>
+                <li>ㅤㅤ- ReactJS</li>
+              </ul>
+              <ul class="personal">
+                <li style="font-size: 2rem">
+                  <img
+                    src="./media/img/icons/personal.svg"
+                    alt="personal"
+                    class="icon"
+                  />
+                  Habilidades personales:
+                </li>
+                <li>ㅤㅤ- Aprendizaje rápido</li>
+                <li>ㅤㅤ- Adaptabilidad para realizar tareas</li>
+              </ul>
             </div>
+          </div>
         </div>
+        <div class="sectionLine" id="projects"></div>
         <!-- Proyectos -->
-        <div></div>
-      </div>
-      <div class="sectionLine"></div>
-    </main>
-  </div>
+        <div>
+          <h3 class="projectsTitle">Proyectos</h3>
+          <div class="containerProjects">
+            <div class="card">
+              <a href="https://leanservice.netlify.app/" target="_blank"><img src="./media/img/proyects/LeanService.jpg" alt="Lean Service"></a>
+              <div class="text">
+                <p class="title">Lean Service</p>
+                <p class="desc">Pagina que realicé con un equipo para la empresa Lean Service.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://ecsinecs.github.io/proyecto-ecsinecs/" target="_blank"><img src="./media/img/proyects/MeowStudios.jpg" alt="Meow Studios"></a>
+              <a href="https://github.com/Ecsinecs/proyecto-ecsinecs" target="_blank" class="toRepo"><img src="./media/img/icons/github.svg" alt="toRepo" class="repoImg"></a>
+              <div class="text">
+                <p class="title">Meow Studios</p>
+                <p class="desc">Proyecto del curso de Desarrollo Web de Coderhouse.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://ecsinecs.github.io/disruptionpage-bootstrap/" target="_blank"><img src="./media/img/proyects/Disruption.jpg" alt="Disruption"></a>
+              <a href="https://github.com/Ecsinecs/disruptionpage-bootstrap" target="_blank" class="toRepo"><img src="./media/img/icons/github.svg" alt="toRepo" class="repoImg"></a>
+              <div class="text">
+                <p class="title">Disruption</p>
+                <p class="desc">Proyecto para utilizar Bootstrap en el curso de Desarrollo Web de Coderhouse.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://ecsinecs.github.io/JavaScript-CoderHouse/" target="_blank"><img src="./media/img/proyects/NaturaShop1.jpg" alt="Natura Shop JS"></a>
+              <a href="https://github.com/Ecsinecs/JavaScript-CoderHouse" target="_blank" class="toRepo"><img src="./media/img/icons/github.svg" alt="toRepo" class="repoImg"></a>
+              <div class="text">
+                <p class="title">Natura Shop (Javascript)</p>
+                <p class="desc">Proyecto del curso de Javascript de Coderhouse. <br>(No tiene versión mobile)</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://ecsinecs.github.io/ReactJS-Coderhouse" target="_blank"><img src="./media/img/proyects/NaturaShop2.jpg" alt="Natura Shop RJS"></a>
+              <a href="https://github.com/Ecsinecs/ReactJS-Coderhouse" target="_blank" class="toRepo"><img src="./media/img/icons/github.svg" alt="toRepo" class="repoImg"></a>
+              <div class="text">
+                <p class="title">Natura Shop (ReactJS)</p>
+                <p class="desc">Proyecto del curso de ReactJS de Coderhouse.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://ecsinecs.github.io/Expositor-de-personajes/" target="_blank"><img src="./media/img/proyects/Expositor.jpg" alt="Expositor"></a>
+              <a href="https://github.com/Ecsinecs/Expositor-de-personajes" target="_blank" class="toRepo"><img src="./media/img/icons/github.svg" alt="toRepo" class="repoImg"></a>
+              <div class="text">
+                <p class="title">Expositor</p>
+                <p class="desc">Proyecto personal simple para subir a LinkedIn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectionLine" id="contact"></div>
+        <div class="contact">
+          <h4 class="title">¡Contáctame!</h4>
+          <ul class="redes">
+            <a href="mailto:jahnelemanuel@gmail.com" target="_blank"><img src="./media/img/icons/Gmail.svg" alt="Gmail"></a>
+            <a href="https://github.com/Ecsinecs" target="_blank"><img src="./media/img/icons/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/lucas-j%C3%A4hnel-3491b5227/" target="_blank"><img src="./media/img/icons/LinkedIn.svg" alt="LinkedIn"></a>
+          </ul>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

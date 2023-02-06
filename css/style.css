@@ -19,16 +19,16 @@
   height: 30px;
   margin-right: 0.6rem;
 }
-.header .lang .arrow {
-  font-size: 1.5rem;
-  font-family: futuraTitle;
-  font-weight: bolder;
-  rotate: 90deg;
-}
 .header .navbar {
   display: flex;
   gap: 60px;
   font-size: 1.4rem;
+}
+.header .navbar li {
+  transition: all ease-in-out 0.3s;
+}
+.header .navbar li:hover {
+  font-size: 1.5rem;
 }
 
 .home {
@@ -133,6 +133,84 @@
   height: 32px;
 }
 
+.projectsTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.containerProjects {
+  margin: 0 10rem 0rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  gap: 50px;
+}
+.containerProjects .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(203, 179, 112, 0.613);
+  box-shadow: 1px 1px 10px rgba(199, 153, 28, 0.347);
+  width: fit-content;
+  height: fit-content;
+}
+.containerProjects .card a {
+  height: 256px;
+}
+.containerProjects .card a img {
+  height: 256px;
+  width: 425px;
+}
+.containerProjects .card .toRepo {
+  position: relative;
+  margin: -128px;
+  right: 170px;
+  top: 50px;
+}
+.containerProjects .card .toRepo .repoImg {
+  width: 64px;
+  height: 64px;
+}
+.containerProjects .card .text {
+  background-color: rgba(0, 0, 0, 0.187);
+  padding: 0.3rem 1rem;
+  width: 425px;
+  height: 95.9px;
+  border-top: 1px solid rgba(203, 179, 112, 0.613);
+}
+.containerProjects .card .text .title {
+  font-size: 2rem;
+}
+.containerProjects .card .text .desc {
+  font-size: 1.1rem;
+}
+
+.contact {
+  margin-bottom: 5rem;
+}
+.contact .title {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.contact .redes a img {
+  width: 128px;
+  height: 128px;
+  transition: all ease-in-out 0.3s;
+}
+.contact .redes a img:hover {
+  width: 148px;
+  height: 148px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -176,6 +254,16 @@ body {
 
 .sectionLine {
   margin: 6rem;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(17, 13, 2);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 155, 76);
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

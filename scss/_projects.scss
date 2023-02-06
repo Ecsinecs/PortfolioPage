@@ -1,0 +1,61 @@
+.projectsTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.containerProjects {
+    margin: 0 10rem 0rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    gap: 50px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(203, 179, 112, 0.613);
+    box-shadow: 1px 1px 10px rgba(199, 153, 28, 0.347);
+    width: fit-content;
+    height: fit-content;
+
+    a {
+      height: 256px;
+
+      img {
+        height: 256px;
+        width: 425px;
+      }
+    }
+
+    .toRepo {
+      position: relative;
+      margin: -128px;
+      right: 170px;
+      top: 50px;
+
+      .repoImg {
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    .text {
+      background-color: rgba(0, 0, 0, 0.187);
+      padding: 0.3rem 1rem;
+      width: 425px;
+      height: 95.9px;
+      border-top: 1px solid rgba(203, 179, 112, 0.613);
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .desc {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

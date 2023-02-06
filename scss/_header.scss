@@ -19,18 +19,19 @@
             height: 30px;
             margin-right: 0.6rem;
         }
-
-        .arrow {
-            font-size: 1.5rem;
-            font-family: futuraTitle;
-            font-weight: bolder;
-            rotate: 90deg;
-        }
     }
 
     .navbar {
         display: flex;
         gap: 60px;
         font-size: 1.4rem;
+
+        li {
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                font-size: 1.5rem;
+            }
+        }
     }
 }

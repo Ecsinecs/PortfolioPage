@@ -1,6 +1,8 @@
 @import "./header";
 @import "./home";
 @import "./aboutMe";
+@import "./projects";
+@import "./contact";
 
 * {
     margin: 0;
@@ -48,4 +50,14 @@
   .sectionLine{
     @extend .line;
     margin: 6rem;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(17, 13, 2);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 155, 76);
+  border-radius: 5px;
 }
