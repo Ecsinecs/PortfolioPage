@@ -2,83 +2,142 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  gap: 30px;
-  grid-template-columns: 1fr 2px 1fr;
-  grid-template-rows: 4rem 1fr;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 36rem 3px 8rem 24rem;
   grid-template-areas:
-    "titleC divider titleE"
-    "conocimientos divider estudios";
+    "titleC"
+    "conocimientos"
+    "divider"
+    "titleE"
+    "estudios";
 
   .titleC {
     grid-area: titleC;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .conocimientos {
     display: grid;
-    align-items: end;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8rem 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.2fr;
     grid-template-areas:
-      "techs techs2"
-      "techs none"
-      "techs langs";
+      "techs"
+      "techs2"
+      "langs";
 
     .techs {
       grid-area: techs;
       font-size: 2rem;
       display: flex;
       flex-direction: column;
-
     }
 
     .techs2 {
       grid-area: techs2;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .langs {
       grid-area: langs;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
 
   .divider {
     grid-area: divider;
-    transform: rotate(90deg);
-    width: 610px;
+    transform: rotate(0deg);
+    width: 85vw;
     height: 2px;
+    margin-top: 3rem;
   }
 
   .titleE {
     grid-area: titleE;
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
   }
 
-  .estudios {
+  .estudiosMobile {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "secundario"
-    "terciario"
-    "personal"
-    ;
+    grid-template-areas:
+      "secundario"
+      "terciario"
+      "personal";
+
+    .secundarioMobile {
+      grid-area: secundario;
+      font-size: 1.5rem;
+      text-align: center;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    .terciarioMobile {
+      grid-area: terciario;
+      font-size: 1.3rem;
+      text-align: center;
+
+      .title {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .personalMobile {
+      grid-area: personal;
+      font-size: 1.3rem;
+      text-align: center;
+
+      .title {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .estudios {
+    display: none;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.8fr;
+    grid-template-areas:
+      "secundario"
+      "terciario"
+      "personal";
 
     .secundario {
-        grid-area: secundario;
-        font-size: 2.2rem;
+      grid-area: secundario;
+      font-size: 1.6rem;
     }
 
     .terciario {
-        grid-area: terciario;
-        font-size: 1.5rem;
+      grid-area: terciario;
+      font-size: 1.5rem;
     }
 
     .personal {
-        grid-area: personal;
-        font-size: 1.5rem;
+      grid-area: personal;
+      font-size: 1.5rem;
     }
   }
 }
@@ -86,7 +145,6 @@
 .icon {
   width: 32px;
   height: 32px;
-  
 }
 
 .langIcon {
