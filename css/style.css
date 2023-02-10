@@ -23,7 +23,7 @@
 .header .navbar {
   display: flex;
   gap: 10px;
-  font-size: 1rem;
+  font-size: 5vw;
   margin-top: 0.5rem;
 }
 .header .navbar li {
@@ -33,8 +33,37 @@
   font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+  }
+  .header .navbar {
+    margin: 0;
+    font-size: 3.5vw;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 0.5rem 2rem;
+  }
+  .header .navbar {
+    font-size: 1.3rem;
+    gap: 30px;
+  }
+  .header .navbar li:hover {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .header .navbar {
+    font-size: 1.5rem;
+  }
+  .header .navbar li:hover {
+    font-size: 1.7rem;
+  }
+}
 .home {
-  padding-top: 8rem;
+  padding-top: 25vw;
   margin: 0 0rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -45,11 +74,11 @@
   align-self: center;
   justify-self: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(133, 119, 76, 0.772) 100%);
-  height: 254px;
+  height: 80vw;
   width: 80vw;
 }
 .home .img img {
-  height: 254px;
+  height: 80vw;
   width: 80vw;
   border: 2px solid rgba(203, 179, 112, 0.613);
   border-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 21%, rgba(203, 179, 112, 0.613) 100%) 30;
@@ -58,21 +87,84 @@
   align-self: center;
 }
 .home .text .title {
-  font-size: 5rem;
+  font-size: 20vw;
   text-align: center;
 }
 .home .text .subtitle {
-  font-size: 1.3rem;
+  font-size: 6vw;
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .home {
+    padding-top: 6rem;
+  }
+  .home .img {
+    height: 70vw;
+    width: 70vw;
+  }
+  .home .img img {
+    height: 70vw;
+    width: 70vw;
+  }
+  .home .text .title {
+    font-size: 16vw;
+  }
+  .home .text .line, .home .text .sectionLine {
+    margin: 0.5rem 0 1.5rem 0;
+  }
+  .home .text .subtitle {
+    font-size: 4.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .home .img img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .home .text .title {
+    font-size: 10vw;
+    text-align: left;
+  }
+  .home .text .line, .home .text .sectionLine {
+    margin: 0;
+  }
+  .home .text .subtitle {
+    font-size: 2.6vw;
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .home .img {
+    width: 31vw;
+    height: 33vw;
+  }
+  .home .img img {
+    width: 31vw;
+    height: 33vw;
+  }
+  .home .text .title {
+    font-size: 8vw;
+  }
+  .home .text .subtitle {
+    font-size: 2vw;
+  }
+}
 .sections {
   display: grid;
   align-items: center;
   justify-items: center;
   gap: 15px;
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 36rem 3px 8rem 24rem;
+  grid-template-rows: 4rem 1.5fr 3px 42vw 1fr;
   grid-template-areas: "titleC" "conocimientos" "divider" "titleE" "estudios";
 }
 .sections .titleC {
@@ -80,6 +172,7 @@
   font-size: 3rem;
 }
 .sections .conocimientos {
+  grid-area: conocimientos;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -115,6 +208,7 @@
   margin-top: 2rem;
 }
 .sections .estudiosMobile {
+  grid-area: estudios;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
@@ -157,6 +251,7 @@
   height: 32px;
 }
 .sections .estudios {
+  grid-area: estudios;
   display: none;
   align-items: center;
   grid-template-columns: 1fr;
@@ -186,6 +281,140 @@
   height: 32px;
 }
 
+@media (min-width: 375px) {
+  .sections {
+    grid-template-rows: 4rem 1.2fr 3px 42vw 1fr;
+  }
+  .sections .titleC {
+    font-size: 13vw;
+  }
+  .sections .titleE {
+    font-size: 15vw;
+  }
+  .sections .conocimientos .techs {
+    font-size: 8vw;
+  }
+  .sections .conocimientos .techs2 {
+    font-size: 8vw;
+  }
+  .sections .conocimientos .langs {
+    font-size: 8vw;
+  }
+  .sections .estudiosMobile {
+    gap: 3vw;
+  }
+  .sections .estudiosMobile .secundarioMobile {
+    font-size: 7vw;
+  }
+  .sections .estudiosMobile .terciarioMobile {
+    font-size: 7vw;
+  }
+  .sections .estudiosMobile .terciarioMobile .title {
+    font-size: 10vw;
+  }
+  .sections .estudiosMobile .personalMobile {
+    font-size: 6vw;
+  }
+  .sections .estudiosMobile .personalMobile .title {
+    font-size: 8vw;
+  }
+}
+@media (min-width: 600px) {
+  .sections {
+    grid-template-rows: 4rem 0.5fr 3px 6rem 0.5fr;
+  }
+  .sections .conocimientos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "techs techs2" "techs langs";
+    margin: 1rem 0 2rem 0;
+  }
+  .sections .conocimientos .techs {
+    font-size: 6vw;
+  }
+  .sections .conocimientos .techs2 {
+    font-size: 5vw;
+  }
+  .sections .conocimientos .langs {
+    font-size: 4.5vw;
+  }
+  .sections .divider {
+    margin: 0;
+  }
+  .sections .titleE {
+    margin-top: 2rem;
+    font-size: 9vw;
+  }
+  .sections .estudiosMobile {
+    display: none;
+  }
+  .sections .estudios {
+    display: grid;
+    grid-template-rows: 0.8fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .sections .titleC {
+    font-size: 10vw;
+  }
+  .sections .conocimientos {
+    justify-items: start;
+  }
+  .sections .conocimientos .techs {
+    font-size: 4vw;
+  }
+  .sections .titleE {
+    font-size: 8vw;
+  }
+}
+@media (min-width: 1024px) {
+  .sections {
+    grid-template-columns: 1fr 3px 1fr;
+    grid-template-rows: 6rem 1fr;
+    grid-template-areas: "titleC divider titleE" "conocimientos divider estudios";
+    gap: 20px;
+  }
+  .sections .titleC {
+    font-size: 3vw;
+  }
+  .sections .conocimientos {
+    grid-template-columns: 0.7fr 1fr;
+    margin: 0;
+    width: 42.5;
+  }
+  .sections .conocimientos .techs {
+    font-size: 2.7vw;
+  }
+  .sections .conocimientos .techs2 {
+    font-size: 2.9vw;
+  }
+  .sections .conocimientos .langs {
+    font-size: 2.6vw;
+  }
+  .sections .divider {
+    transform: rotate(90deg);
+    width: 40vw;
+  }
+  .sections .titleE {
+    font-size: 3vw;
+    margin: 0;
+  }
+  .sections .estudios .secundario {
+    font-size: 2.6vw;
+  }
+  .sections .estudios .terciario {
+    font-size: 2vw;
+  }
+  .sections .estudios .terciario .title {
+    font-size: 2.6vw;
+  }
+  .sections .estudios .personal {
+    font-size: 2vw;
+  }
+  .sections .estudios .personal .title {
+    font-size: 2.6vw;
+  }
+}
 .projectsTitle {
   font-size: 4rem;
   text-align: center;
@@ -252,11 +481,85 @@
   font-size: 1.1rem;
 }
 
+@media (min-width: 375px) {
+  .projectsTitle {
+    font-size: 18vw;
+  }
+  .containerProjects .card a {
+    height: 40vw;
+  }
+  .containerProjects .card a img {
+    height: 40vw;
+    width: 80vw;
+  }
+  .containerProjects .card .text {
+    width: 80vw;
+  }
+  .containerProjects .card .toRepo {
+    margin: -20vw;
+    right: 32vw;
+    top: 6vw;
+  }
+}
+@media (min-width: 600px) {
+  .containerProjects .card .toRepo {
+    top: 10vw;
+    right: 35vw;
+  }
+}
+@media (min-width: 768px) {
+  .projectsTitle {
+    font-size: 10vw;
+  }
+  .containerProjects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .containerProjects .card a {
+    height: 25vw;
+  }
+  .containerProjects .card a img {
+    height: 25vw;
+    width: 43vw;
+  }
+  .containerProjects .card .toRepo {
+    margin: -12.5vw;
+    top: 6vw;
+    right: 18vw;
+  }
+  .containerProjects .card .text {
+    width: 43vw;
+    min-height: 95px;
+  }
+}
+@media (min-width: 1200px) {
+  .projectsTitle {
+    font-size: 7vw;
+  }
+  .containerProjects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .containerProjects .card a {
+    height: 17vw;
+  }
+  .containerProjects .card a img {
+    height: 17vw;
+    width: 28vw;
+  }
+  .containerProjects .card .toRepo {
+    margin: -8.5vw;
+    top: 4vw;
+    right: 11vw;
+  }
+  .containerProjects .card .text {
+    width: 28vw;
+  }
+}
 .contact {
   margin-bottom: 5rem;
 }
 .contact .title {
-  font-size: 3rem;
+  font-size: 15vw;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -267,15 +570,28 @@
   gap: 3rem;
 }
 .contact .redes a img {
-  width: 64px;
-  height: 64px;
+  width: 30vw;
+  height: 30vw;
   transition: all ease-in-out 0.3s;
 }
 .contact .redes a img:hover {
-  width: 86px;
-  height: 86px;
+  width: 35vw;
+  height: 35vw;
 }
 
+@media (min-width: 768px) {
+  .contact .title {
+    font-size: 9vw;
+  }
+  .contact .redes a img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .contact .redes a img:hover {
+    width: 17vw;
+    height: 17vw;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -319,7 +635,7 @@ body {
 
 .sectionLine {
   margin: 2rem 0.5rem;
-  height: 3px;
+  height: 2px;
 }
 
 .glow {
@@ -335,6 +651,12 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(182, 155, 76);
   border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+  .sectionLine {
+    height: 3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

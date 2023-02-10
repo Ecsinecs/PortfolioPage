@@ -50,7 +50,7 @@
   .sectionLine{
     @extend .line;
     margin: 2rem 0.5rem;
-    height: 3px;
+    height: 2px;
 }
 
 .glow {
@@ -68,4 +68,12 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgb(182, 155, 76);
   border-radius: 5px;
+}
+
+//MediaQuerys
+
+@media (min-width: 1024px) {
+  .sectionLine {
+    height: 3px;
+  }
 }

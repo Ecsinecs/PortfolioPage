@@ -4,7 +4,7 @@
   justify-items: center;
   gap: 15px;
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 36rem 3px 8rem 24rem;
+  grid-template-rows: 4rem 1.5fr 3px 42vw 1fr;
   grid-template-areas:
     "titleC"
     "conocimientos"
@@ -18,6 +18,7 @@
   }
 
   .conocimientos {
+    grid-area: conocimientos;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -62,6 +63,7 @@
   }
 
   .estudiosMobile {
+    grid-area: estudios;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
@@ -116,6 +118,7 @@
   }
 
   .estudios {
+    grid-area: estudios;
     display: none;
     align-items: center;
     grid-template-columns: 1fr;
@@ -150,4 +153,182 @@
 .langIcon {
   width: 48px;
   height: 32px;
+}
+
+//mediaQuerys
+
+@media (min-width: 375px) {
+  .sections {
+    grid-template-rows: 4rem 1.2fr 3px 42vw 1fr;
+
+    .titleC {
+      font-size: 13vw;
+    }
+
+    .titleE {
+      font-size: 15vw;
+    }
+
+    .conocimientos {
+      .techs {
+        font-size: 8vw;
+      }
+      .techs2 {
+        font-size: 8vw;
+      }
+      .langs {
+        font-size: 8vw;
+      }
+    }
+
+    .estudiosMobile {
+      gap: 3vw;
+
+      .secundarioMobile {
+        font-size: 7vw;
+      }
+      .terciarioMobile {
+        font-size: 7vw;
+
+        .title {
+          font-size: 10vw;
+        }
+      }
+      .personalMobile {
+        font-size: 6vw;
+
+        .title {
+          font-size: 8vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .sections {
+    grid-template-rows: 4rem 0.5fr 3px 6rem 0.5fr;
+
+    .conocimientos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "techs techs2"
+        "techs langs";
+      margin: 1rem 0 2rem 0;
+
+      .techs {
+        font-size: 6vw;
+      }
+      .techs2 {
+        font-size: 5vw;
+      }
+      .langs {
+        font-size: 4.5vw;
+      }
+    }
+
+    .divider {
+      margin: 0;
+    }
+
+    .titleE {
+      margin-top: 2rem;
+      font-size: 9vw;
+    }
+
+    .estudiosMobile {
+      display: none;
+    }
+
+    .estudios {
+      display: grid;
+      grid-template-rows: 0.8fr 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sections {
+    .titleC {
+      font-size: 10vw;
+    }
+
+    .conocimientos {
+      justify-items: start;
+
+      .techs {
+        font-size: 4vw;
+      }
+    }
+
+    .titleE {
+      font-size: 8vw;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .sections {
+    grid-template-columns: 1fr 3px 1fr;
+    grid-template-rows: 6rem 1fr;
+    grid-template-areas: 
+    "titleC divider titleE"
+    "conocimientos divider estudios";
+    gap: 20px;
+
+    .titleC {
+      font-size: 3vw;
+    }
+
+    .conocimientos {
+      grid-template-columns: 0.7fr 1fr;
+      margin: 0;
+      width: 42.5;
+
+      .techs {
+        font-size: 2.7vw;
+      }
+
+      .techs2 {
+        font-size: 2.9vw;
+      }
+
+      .langs {
+        font-size: 2.6vw;
+      }
+    }
+
+    .divider {
+      transform: rotate(90deg);
+      width: 40vw;
+    }
+
+    .titleE {
+      font-size: 3vw;
+      margin: 0;
+    }
+
+    .estudios {
+      .secundario {
+        font-size: 2.6vw;
+      }
+
+      .terciario {        
+        font-size: 2vw;
+
+        .title {
+          font-size: 2.6vw;
+        }
+      }
+      
+      .personal {
+        font-size: 2vw;
+
+        .title {
+          font-size: 2.6vw;
+        }
+      }
+    }
+  }
 }

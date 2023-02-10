@@ -1,37 +1,133 @@
-.home{
-    padding-top: 8rem;
-    margin: 0 0rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0rem;
+.home {
+  padding-top: 25vw;
+  margin: 0 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0rem;
 
-    .img{
-        align-self: center;
-        justify-self: center;
-        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(133, 119, 76, 0.772) 100%);
-        height: 254px;
-        width: 80vw;
+  .img {
+    align-self: center;
+    justify-self: center;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 119, 76, 0.772) 100%
+    );
+    height: 80vw;
+    width: 80vw;
 
-        img{
-            height: 254px;
-            width: 80vw;
-            border: 2px solid rgba(203, 179, 112, 0.613);
-            border-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 21%, rgba(203, 179, 112, 0.613) 100%) 30;
-        }
+    img {
+      height: 80vw;
+      width: 80vw;
+      border: 2px solid rgba(203, 179, 112, 0.613);
+      border-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 21%,
+          rgba(203, 179, 112, 0.613) 100%
+        )
+        30;
+    }
+  }
+
+  .text {
+    align-self: center;
+
+    .title {
+      font-size: 20vw;
+      text-align: center;
     }
 
-    .text{
-        align-self: center;
+    .subtitle {
+      font-size: 6vw;
+      text-align: center;
+    }
+  }
+}
 
+@media (min-width: 600px) {
+  .home {
+    padding-top: 6rem;
+
+    .img {
+      height: 70vw;
+      width: 70vw;
+
+      img {
+        height: 70vw;
+        width: 70vw;
+      }
+    }
+
+    .text {
+      .title {
+        font-size: 16vw;
+      }
+
+      .line {
+        margin: 0.5rem 0 1.5rem 0;
+      }
+
+      .subtitle {
+        font-size: 4.5vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+
+    .img {
+      width: 40vw;
+      height: 40vw;
+
+      img {
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+
+    .text {
+      .title {
+        font-size: 10vw;
+        text-align: left;
+      }
+
+      .line {
+        margin: 0;
+      }
+
+      .subtitle {
+        font-size: 2.6vw;
+        text-align: left;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+    .img {
+      width: 31vw;
+      height: 33vw;
+
+      img {
+        width: 31vw;
+        height: 33vw;
+      }
+    }
+
+    .text {
         .title {
-            font-size: 5rem;
-            text-align: center;
+            font-size: 8vw;
         }
 
         .subtitle {
-            font-size: 1.3rem;
-            text-align: center;
+            font-size: 2vw;
         }
     }
+  }
 }
