@@ -14,11 +14,15 @@
 .header .lang {
   display: flex;
   align-items: center;
-}
-.header .lang .esp {
   width: 50px;
   height: 30px;
-  margin-right: 0.6rem;
+  background-image: url("../media/img/icons/BanderaEspanola.svg");
+  background-size: 2.7rem;
+  transition: all 0.5s ease-in-out;
+}
+.header .lang:hover {
+  background-image: url("../media/img/icons/BanderaEstadounidense.svg");
+  background-size: 3.7rem;
 }
 .header .navbar {
   display: flex;
