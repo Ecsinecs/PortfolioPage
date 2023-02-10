@@ -144,11 +144,11 @@
 }
 @media (min-width: 1440px) {
   .home .img {
-    width: 31vw;
+    width: 33vw;
     height: 33vw;
   }
   .home .img img {
-    width: 31vw;
+    width: 33vw;
     height: 33vw;
   }
   .home .text .title {
@@ -415,6 +415,38 @@
     font-size: 2.6vw;
   }
 }
+@media (min-width: 1440px) {
+  .sections .titleC {
+    font-size: 4vw;
+  }
+  .sections .conocimientos .techs {
+    font-size: 2.4vw;
+  }
+  .sections .conocimientos .techs2 {
+    font-size: 2.6vw;
+  }
+  .sections .conocimientos .langs {
+    font-size: 2.7vw;
+  }
+  .sections .titleE {
+    font-size: 3.6vw;
+  }
+  .sections .estudios .secundario {
+    font-size: 2.2vw;
+  }
+  .sections .estudios .terciario {
+    font-size: 1.9vw;
+  }
+  .sections .estudios .terciario .title {
+    font-size: 2.3vw;
+  }
+  .sections .estudios .personal {
+    font-size: 1.9vw;
+  }
+  .sections .estudios .personal .title {
+    font-size: 2.3vw;
+  }
+}
 .projectsTitle {
   font-size: 4rem;
   text-align: center;
@@ -464,8 +496,8 @@
 }
 .containerProjects .card .toRepo .repoImg:hover {
   box-shadow: 1px 1px 20px white;
-  width: 74px;
-  height: 74px;
+  width: 54px;
+  height: 54px;
 }
 .containerProjects .card .text {
   background-color: rgba(0, 0, 0, 0.187);
@@ -534,7 +566,7 @@
 }
 @media (min-width: 1200px) {
   .projectsTitle {
-    font-size: 7vw;
+    font-size: 6.4vw;
   }
   .containerProjects {
     grid-template-columns: repeat(3, 1fr);
@@ -553,6 +585,12 @@
   }
   .containerProjects .card .text {
     width: 28vw;
+  }
+}
+@media (min-width: 1700px) {
+  .containerProjects .card .toRepo {
+    top: 5vw;
+    right: 12vw;
   }
 }
 .contact {
@@ -590,6 +628,19 @@
   .contact .redes a img:hover {
     width: 17vw;
     height: 17vw;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .title {
+    font-size: 6vw;
+  }
+  .contact .redes a img {
+    width: 10vw;
+    height: 10vw;
+  }
+  .contact .redes a img:hover {
+    width: 11.5vw;
+    height: 11.5vw;
   }
 }
 * {

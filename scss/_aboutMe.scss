@@ -272,9 +272,9 @@
   .sections {
     grid-template-columns: 1fr 3px 1fr;
     grid-template-rows: 6rem 1fr;
-    grid-template-areas: 
-    "titleC divider titleE"
-    "conocimientos divider estudios";
+    grid-template-areas:
+      "titleC divider titleE"
+      "conocimientos divider estudios";
     gap: 20px;
 
     .titleC {
@@ -314,19 +314,67 @@
         font-size: 2.6vw;
       }
 
-      .terciario {        
+      .terciario {
         font-size: 2vw;
 
         .title {
           font-size: 2.6vw;
         }
       }
-      
+
       .personal {
         font-size: 2vw;
 
         .title {
           font-size: 2.6vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .sections {
+    .titleC {
+      font-size: 4vw;
+    }
+
+    .conocimientos {
+      .techs {
+        font-size: 2.4vw;
+      }
+
+      .techs2 {
+        font-size: 2.6vw;
+      }
+
+      .langs {
+        font-size: 2.7vw;
+      }
+    }
+
+    .titleE {
+      font-size: 3.6vw;
+    }
+
+    .estudios {
+      .secundario {
+        font-size: 2.2vw;
+      }
+
+      .terciario {
+        font-size: 1.9vw;
+
+        .title {
+          font-size: 2.3vw;
+        }
+      }
+
+      .personal {
+        font-size: 1.9vw;
+
+        .title {
+          font-size: 2.3vw;
         }
       }
     }

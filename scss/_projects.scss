@@ -50,8 +50,8 @@
 
         &:hover {
           box-shadow: 1px 1px 20px white;
-          width: 74px;
-          height: 74px;
+          width: 54px;
+          height: 54px;
         }
       }
     }
@@ -151,7 +151,7 @@
 
 @media (min-width:1200px) {
   .projectsTitle {
-    font-size: 7vw;
+    font-size: 6.4vw;
   }
 
   .containerProjects {
@@ -177,6 +177,17 @@
 
       .text {
         width: 28vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .containerProjects {
+    .card {
+      .toRepo {
+        top: 5vw;
+        right: 12vw;
       }
     }
   }
