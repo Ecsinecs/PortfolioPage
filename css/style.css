@@ -11,7 +11,7 @@
   top: 0;
   width: 100vw;
 }
-.header .lang {
+.header .lang, .header .langE {
   display: flex;
   align-items: center;
   width: 50px;
@@ -20,9 +20,17 @@
   background-size: 2.7rem;
   transition: all 0.5s ease-in-out;
 }
-.header .lang:hover {
+.header .lang:hover, .header .langE:hover {
   background-image: url("../media/img/icons/BanderaEstadounidense.svg");
   background-size: 3.7rem;
+}
+.header .langE {
+  background-image: url("../media/img/icons/BanderaEstadounidense.svg");
+  background-size: 3.7rem;
+}
+.header .langE:hover {
+  background-image: url("../media/img/icons/BanderaEspanola.svg");
+  background-size: 2.7rem;
 }
 .header .navbar {
   display: flex;
@@ -194,9 +202,12 @@
   grid-area: techs2;
   font-size: 1.8rem;
 }
-.sections .conocimientos .langs {
+.sections .conocimientos .langs, .sections .conocimientos .langsE {
   grid-area: langs;
   font-size: 1.7rem;
+}
+.sections .conocimientos .langsE {
+  font-size: 1.5rem;
 }
 .sections .divider {
   grid-area: divider;
@@ -301,7 +312,7 @@
   .sections .conocimientos .techs2 {
     font-size: 8vw;
   }
-  .sections .conocimientos .langs {
+  .sections .conocimientos .langs, .sections .conocimientos .langsE {
     font-size: 8vw;
   }
   .sections .estudiosMobile {
@@ -339,8 +350,11 @@
   .sections .conocimientos .techs2 {
     font-size: 5vw;
   }
-  .sections .conocimientos .langs {
+  .sections .conocimientos .langs, .sections .conocimientos .langsE {
     font-size: 4.5vw;
+  }
+  .sections .conocimientos .langsE {
+    font-size: 4vw;
   }
   .sections .divider {
     margin: 0;
@@ -392,8 +406,11 @@
   .sections .conocimientos .techs2 {
     font-size: 2.9vw;
   }
-  .sections .conocimientos .langs {
+  .sections .conocimientos .langs, .sections .conocimientos .langsE {
     font-size: 2.6vw;
+  }
+  .sections .conocimientos .langsE {
+    font-size: 2.2vw;
   }
   .sections .divider {
     transform: rotate(90deg);
@@ -429,8 +446,11 @@
   .sections .conocimientos .techs2 {
     font-size: 2.6vw;
   }
-  .sections .conocimientos .langs {
+  .sections .conocimientos .langs, .sections .conocimientos .langsE {
     font-size: 2.7vw;
+  }
+  .sections .conocimientos .langsE {
+    font-size: 2.5vw;
   }
   .sections .titleE {
     font-size: 3.6vw;

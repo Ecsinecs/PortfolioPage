@@ -1,84 +1,94 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(62, 45, 0, 0.121);
+  border-bottom: 1px solid rgba(62, 45, 0, 0.061);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  .lang {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: rgba(62, 45, 0, 0.121);
-    border-bottom: 1px solid rgba(62, 45, 0, 0.061);
-    backdrop-filter: blur(5px);
-    position: fixed;
-    top: 0;
-    width: 100vw;
+    width: 50px;
+    height: 30px;
+    background-image: url("../media/img/icons/BanderaEspanola.svg");
+    background-size: 2.7rem;
+    transition: all 0.5s ease-in-out;
 
-    .lang {
-        display: flex;
-        align-items: center;
-        width: 50px;
-        height: 30px;
-        background-image: url("../media/img/icons/BanderaEspanola.svg");
-        background-size: 2.7rem;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-            background-image: url("../media/img/icons/BanderaEstadounidense.svg");
-            background-size: 3.7rem;
-        }
+    &:hover {
+      background-image: url("../media/img/icons/BanderaEstadounidense.svg");
+      background-size: 3.7rem;
     }
+  }
 
-    .navbar {
-        display: flex;
-        gap: 10px;
-        font-size: 5vw;
-        margin-top: 0.5rem;
+  .langE {
+    @extend .lang;
+    background-image: url("../media/img/icons/BanderaEstadounidense.svg");
+    background-size: 3.7rem;
 
-        li {
-            transition: all ease-in-out 0.3s;
-
-            &:hover {
-                font-size: 1.2rem;
-            }
-        }
+    &:hover {
+      background-image: url("../media/img/icons/BanderaEspanola.svg");
+      background-size: 2.7rem;
     }
+  }
+
+  .navbar {
+    display: flex;
+    gap: 10px;
+    font-size: 5vw;
+    margin-top: 0.5rem;
+
+    li {
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
 
 //MediaQuerys
 
-@media (min-width:600px) {
-    .header {
-        flex-direction: row;
-        
-        .navbar {
-            margin: 0;
-            font-size: 3.5vw;
-        }
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+
+    .navbar {
+      margin: 0;
+      font-size: 3.5vw;
     }
+  }
 }
 
-@media (min-width:768px) {
-    .header {
-        padding: 0.5rem 2rem;
+@media (min-width: 768px) {
+  .header {
+    padding: 0.5rem 2rem;
 
-        .navbar {
-            font-size: 1.3rem;
-            gap: 30px;
+    .navbar {
+      font-size: 1.3rem;
+      gap: 30px;
 
-            li:hover {
-                font-size: 1.5rem;
-            }
-        }
+      li:hover {
+        font-size: 1.5rem;
+      }
     }
+  }
 }
 
-@media (min-width:1440px) {
-    .header{
+@media (min-width: 1440px) {
+  .header {
+    .navbar {
+      font-size: 1.5rem;
 
-        .navbar{
-            font-size: 1.5rem;
-
-            li:hover {
-                font-size: 1.7rem;
-            }
-        }
+      li:hover {
+        font-size: 1.7rem;
+      }
     }
+  }
 }

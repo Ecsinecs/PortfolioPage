@@ -45,6 +45,11 @@
       grid-area: langs;
       font-size: 1.7rem;
     }
+
+    .langsE {
+      @extend .langs;
+      font-size: 1.5rem;
+    }
   }
 
   .divider {
@@ -226,6 +231,10 @@
       .langs {
         font-size: 4.5vw;
       }
+
+      .langsE {
+        font-size: 4vw;
+      }
     }
 
     .divider {
@@ -297,6 +306,10 @@
       .langs {
         font-size: 2.6vw;
       }
+
+      .langsE {
+        font-size: 2.2vw;
+      }
     }
 
     .divider {
@@ -350,6 +363,10 @@
 
       .langs {
         font-size: 2.7vw;
+      }
+
+      .langsE {
+        font-size: 2.5vw;
       }
     }
 
