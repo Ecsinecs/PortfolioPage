@@ -11,18 +11,25 @@
   top: 0;
   width: 100vw;
 }
-.header .lang, .header .langE {
+.header .langContainer {
+  display: flex;
+}
+.header .langContainer .lang, .header .langContainer .langE {
   display: flex;
   align-items: center;
   width: 50px;
   height: 30px;
   background-image: url("../media/img/icons/BanderaEspanola.svg");
   background-size: 2.7rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.header .lang:hover, .header .langE:hover {
+.header .langContainer .lang:hover, .header .langContainer .langE:hover {
   background-image: url("../media/img/icons/BanderaEstadounidense.svg");
   background-size: 3.7rem;
+}
+.header .langContainer .changeLang {
+  padding-top: 5px;
+  margin-left: 10px;
 }
 .header .langE {
   background-image: url("../media/img/icons/BanderaEstadounidense.svg");

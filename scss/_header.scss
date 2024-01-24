@@ -11,18 +11,27 @@
   top: 0;
   width: 100vw;
 
-  .lang {
+  .langContainer {
     display: flex;
-    align-items: center;
-    width: 50px;
-    height: 30px;
-    background-image: url("../media/img/icons/BanderaEspanola.svg");
-    background-size: 2.7rem;
-    transition: all 0.5s ease-in-out;
 
-    &:hover {
-      background-image: url("../media/img/icons/BanderaEstadounidense.svg");
-      background-size: 3.7rem;
+    .lang {
+      display: flex;
+      align-items: center;
+      width: 50px;
+      height: 30px;
+      background-image: url("../media/img/icons/BanderaEspanola.svg");
+      background-size: 2.7rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-image: url("../media/img/icons/BanderaEstadounidense.svg");
+        background-size: 3.7rem;
+      }
+    }
+
+    .changeLang {
+      padding-top: 5px;
+      margin-left: 10px
     }
   }
 
