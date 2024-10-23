@@ -13,6 +13,7 @@
 
   .langContainer {
     display: flex;
+    flex-direction: row;
 
     .lang {
       display: flex;
@@ -20,7 +21,9 @@
       width: 50px;
       height: 30px;
       background-image: url("../media/img/icons/BanderaEspanola.svg");
-      background-size: 2.7rem;
+      background-size: 3.1rem;
+      background-repeat: no-repeat;
+      background-position: center;
       transition: all 0.2s ease-in-out;
 
       &:hover {
